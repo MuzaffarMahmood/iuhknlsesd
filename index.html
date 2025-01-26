@@ -1,86 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AI/ML and Software Development</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ArtificialBrain.co - IT and AI Consultancy</title>
+		<link rel="stylesheet" href="styles.css">
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">ArtificialBrain<span>.co</span></h1>
+				<nav class="desktop-nav">
+					<ul class="nav-links">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<a href="#contact" class="btn-header">Let's Talk</a>
+					</ul>
+				</nav>
+				<div class="menu-toggle active" id="menu-toggle">&#9776;</div>
+				<div class="close-btn" id="close-btn">&times;</div>
+			</div>
+		</header>
+		<!-- Mobile Navigation Overlay -->
+		<div class="nav-overlay" id="nav-overlay">
+			<div class="nav-content">
+				<span class="close-btn" id="close-btn">&times;</span>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#work">Our Work</a></li>
+					<li><a href="#solutions">Solutions</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#playbook">Playbook</a></li>
+				</ul>
+				<div class="extra-links">
+					<a href="#">Careers</a>
+					<a href="#">Articles</a>
+				</div>
+				<div class="social-icons">
+					<a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+					<a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+					<a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+					<a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+				</div>
+				<a href="#contact" class="btn-cta">Let's Talk</a>
+			</div>
+		</div>
+		<!-- Hero Section -->
+		<section id="home" class="hero hero-bg">
+			<div class="container">
+				<h2>Empowering Businesses with AI & IT Solutions</h2>
+				<p>We provide cutting-edge IT consulting services to help your business thrive in the digital era.</p>
+				<a href="#contact" class="btn">Get Started</a>
+			</div>
+		</section>
+		<!-- Services Section -->
+		<section id="services" class="services">
+			<div class="container">
+				<h2>Our Services</h2>
+				<div class="service-grid">
+					<div class="service-item">
+						<h3>Microsoft Dynamics 365</h3>
+						<p>Boost Business Efficiency with Microsoft Dynamics 365.
+	Leverage AI-powered automation and data-driven insights to streamline business processes and enhance decision-making. Improve customer relationship management (CRM), enterprise resource planning (ERP), and financial operations with Microsoft's cloud-based business solution.
+	</p>
+					</div>
+					<div class="service-item">
+						<h3>Salesforce CRM</h3>
+						<p>Transform Customer Relationships with Salesforce CRM.
+	Enhance your sales, marketing, and customer service with the world’s leading cloud-based CRM platform. Scale effortlessly with AI-driven analytics, automate workflows, and optimize customer engagement strategies for increased conversions and retention.</p>
+					</div>
+					<div class="service-item">
+						<h3>Web App Development</h3>
+						<p>Innovative Web App Development for Future-Ready Businesses.
+	Protect and scale your online presence with secure, scalable, and high-performance web applications. Our expert developers build custom web apps that drive business growth, improve user experience, and safeguard against cyber threats.</p>
+					</div>
+					<div class="service-item">
+						<h3>AI/ML Consulting</h3>
+						<p>Harness the Power of AI & Machine Learning for Smarter Decisions.
+	Leverage Artificial Intelligence (AI) and Machine Learning (ML) to automate processes, gain deep insights, and enhance predictive decision-making. Our AI/ML experts help businesses optimize operations, reduce costs, and unlock new growth opportunities.</p>
+					</div>
+					<div class="service-item">
+						<h3>Cloud Solutions</h3>
+						<p>Seamless Cloud Solutions for Scalable Growth.
+	Migrate, optimize, and scale your business with cutting-edge cloud computing solutions. Whether you're moving to the cloud, optimizing infrastructure, or securing remote work environments, we ensure seamless integration and cost-efficient performance.</p>
+					</div>
+					<div class="service-item">
+						<h3>Data Analytics</h3>
+						<p>Data-Driven Insights for Smarter Business Decisions.
+	Turn raw data into actionable insights with our advanced data analytics solutions. Detect patterns, prevent cyber threats, and drive strategic decisions with real-time analytics, AI-powered forecasting, and secure big data processing.</p>
+					</div>
+					<div class="service-item">
+						<h3>Data Driven Development</h3>
+						<p>Leverage AI & Data Science for Business Innovation
+	Use data-driven methodologies to enhance business efficiency, improve decision-making, and create AI-powered applications. We integrate machine learning models and advanced data engineering to optimize enterprise solutions.</p>
+					</div>
+					<div class="service-item">
+						<h3>Data Management System</h3>
+						<p>Effortless Data Management for a Secure Future
+	Optimize, secure, and scale your business data with our robust data management solutions. From data governance to cloud storage optimization, we ensure seamless access, integrity, and security for your enterprise data ecosystem.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Section -->
+		<section id="about" class="about">
+			<div class="container">
+				<h2>About Us</h2>
+				<p>We specialize in providing comprehensive IT services tailored to meet the unique needs of businesses across industries. Our mission is to empower organizations by delivering cutting-edge solutions that enhance efficiency, security, and growth.</p>
+	<p>
+	With a team of experienced professionals, we pride ourselves on offering a wide range of services, including IT consulting, managed services, cloud computing, cybersecurity, software development, and technical support. We understand that every business is different, which is why we adopt a client-centric approach to craft solutions that align with your goals.</p>
+	<p>
+	What sets us apart is our commitment to excellence, transparency, and innovation. We stay ahead of technological advancements to ensure that our clients always have access to the best tools and practices. Our partnerships with leading technology providers enable us to deliver robust and reliable solutions that you can trust.</p>
+	<p>
+	We believe in building long-term relationships with our clients. Your success is our success, and we are dedicated to being a trusted partner on your journey to achieving your business objectives.</p>
+	<p>
+	Discover how we can help transform your IT infrastructure and take your business to the next level. 
+	Contact us today to learn more about our services and how we can work together to make your vision a reality.</p>
+			</div>
+		</section>
+		<!-- Contact Section -->
+		<section class="booking-section">
+			<div class="container">
+				<div class="booking-grid">
+					<div class="contact-form">
+						<h2>Have A Question?</h2>
+						<form>
+							<label for="name">Name:</label>
+							<input type="text" id="name" required>
 
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
+							<label for="email">Email:</label>
+							<input type="email" id="email" required>
 
-        .hero {
-            position: relative;
-            height: 100vh; /* Full screen height */
-            background-image: url('images/artificial-intelligence-software-machine-learning-crm.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+							<label for="message">Question:</label>
+							<textarea id="message" rows="4" required></textarea>
 
-        .hero-content {
-            max-width: 800px;
-            padding: 20px;
-        }
+							<!-- Terms and Conditions Checkbox -->
+							<div class="checkbox-group">
+								<input type="checkbox" id="terms" required>
+								<label for="terms">By clicking, you agree to our 
+									<a href="terms.html" target="_blank">Terms and Conditions</a>.
+								</label>
+							</div>
 
-        .hero h1 {
-            font-size: 3em;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
+							<!-- Newsletter Checkbox -->
+							<div class="checkbox-group">
+								<input type="checkbox" id="newsletter">
+								<label for="newsletter">Send me news and updates</label>
+							</div>
 
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
+							<button type="submit">Send Message</button>
+						</form>
+					</div>
 
-        .cta-button {
-            padding: 15px 30px;
-            font-size: 1.2em;
-            background-color: #00B0FF; /* Bright accent color */
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .cta-button:hover {
-            background-color: #008CBA; /* Slightly darker on hover */
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2em;
-            }
-            .hero p {
-                font-size: 1em;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Innovating the Future with AI & Machine Learning Software Development</h1>
-            <p>We harness the power of Artificial Intelligence and Machine Learning to build cutting-edge software solutions that Elevate businesses to the next level.</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-        </div>
-    </div>
-
-</body>
+					<div class="google-calendar">
+						<h2>Get A Free Consultation</h2>
+						<!-- Google Calendar Appointment Scheduling -->
+						<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1pon92ir2SKofaQDSgfhH2AClKt9o56tWVcXpawoGweD4t5eMqm2ejGX-A3VgeCiKu9CPEf34t?gv=true" 
+							style="border: 0" width="100%" height="600" frameborder="0">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<p>Copywrite &copy; 2025 ArtificialBrain.co | All Rights Reserved.</p>
+			</div>
+		</footer>
+	</body>
 </html>

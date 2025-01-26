@@ -1,0 +1,435 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+/* Close Button */
+.close-btn {
+	display: none;
+	position: absolute;
+	right: 30px;
+	font-size: 60px;
+	color: white;
+	cursor: pointer;
+}
+/* Header Button */
+.btn-header {
+    display: inline-block;
+	width: 75px;
+    padding: 10px 18px;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-header:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f39c12;
+}
+
+/* Navigation */
+.desktop-nav {
+    display: flex;
+}
+
+.desktop-nav .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.desktop-nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.desktop-nav .nav-links a:hover {
+    transform: translateY(-3px);
+}
+/* Full-Screen Mobile Navigation */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #06060e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+/* Hero Section */
+.hero {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+}
+
+.hero-bg {
+    background-image: url('images/artificial-intelligence-software-machine-learning-crm.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+	height: 100vh;
+}
+.hero h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+/* Extra Links */
+.extra-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.extra-links a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.extra-links a:hover {
+    color: white;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    filter: brightness(0.8);
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    filter: brightness(1);
+}
+
+/* CTA Button */
+.btn-cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff2e63;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    background: #d81b54;
+}
+/* Services */
+.services {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 60px;
+    background: white;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #0a3d62;
+    margin-bottom: 10px;
+}
+.about {
+    padding: 20px;
+}
+.about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0px;
+	text-align: center;
+}
+
+/*-----------------End of About------------------------*/
+
+/*-----------------Contact us--------------------------*/
+.booking-section {
+	background-color: #fff;
+    justify-content: center;
+    padding: 50px 0px;
+	
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+/* Google Calendar Styling */
+.google-calendar {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Checkbox Alignment Fix */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.checkbox-group input {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+/* Button Styling */
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f39c12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.google-calendar iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* RESPONSIVENESS FIX */
+@media (max-width: 940px) {
+    .booking-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/*-----------------End of Contact us--------------------------*/
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+	    .menu-toggle.active {
+		display: block;
+	}
+	.close-btn.active {
+		display: block;
+	}
+        /* Mobile Navigation Links */
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav-links li {
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: cyan;
+        }
+
+    .nav-links.active {
+        display: flex;
+    }
+	.btn-header {
+        display: none; /* Hide on small screens, can be added in the mobile menu if needed */
+    }
+	.desktop-nav {
+        display: none;
+    }
+    .btn-header.desktop-only {
+        display: none;
+    }
+	.nav-overlay.active {
+		transform: translateY(0);
+	}
+}
